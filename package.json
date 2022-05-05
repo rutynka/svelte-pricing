@@ -1,5 +1,5 @@
 {
-  "name": "simple-svelte-pricing",
+  "name": "svelte-pricing",
   "author": "ru7ynk4",
   "version": "0.0.2",
   "description": "A simple multilang column pricing app - made with Svelte - based on github pricing.",
@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
-    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-env": "^7.17.10",
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
     "@testing-library/jest-dom": "^5.16.2",

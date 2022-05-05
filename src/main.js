@@ -1,6 +1,6 @@
 import App from './Pricing.svelte';
 
-const prgs = new App({
+const app = new App({
 	target: document.body,
 	// target: document.body.getElementsByTagName('main')[0],
 	// anchor: document.getElementById('userContent'),
@@ -8,4 +8,4 @@ const prgs = new App({
 	}
 });
 
-export default prgs;
+export default app;

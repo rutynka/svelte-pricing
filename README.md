@@ -40,20 +40,21 @@ By default, the server will only respond to requests from localhost. To allow co
 If you're using [Visual Studio Code](https://code.visualstudio.com/) we recommend installing the official extension [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). If you are using other editors you may need to install a plugin in order to get syntax highlighting and intellisense.
 ## Import as `Svelte Component`
 
-<img width="820" src="public/screen_14_days_hello.png" alt="screenshot">
+<img width="820" src="public/screen_pricing_hello.png" alt="screenshot">
 
 ```bash
 npx degit sveltejs/template my-svelte-project
 cd my-svelte-project
 yarn install
-yarn install rutynka/helper-progress-calendar
+yarn add simple-svelte-pricing
+yarn install
 yarn dev 
 ```
 
 ```js
 //my-svelte-project/src/App.svelte
 <script>
-	import { Progress } from '@rutynka/helper-progress/src/Progress.svelte'
+	import { Progress } from '@rutynka/rutynka-progress/src/Progress.svelte'
 	export let name;
 
 	let progress;
