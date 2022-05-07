@@ -1,7 +1,7 @@
 {
   "name": "svelte-pricing",
   "author": "ru7ynk4",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A simple multilang column pricing app - made with Svelte - based on github pricing.",
   "svelte": "src/index.js",
   "module": "dist/index.es",

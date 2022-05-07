@@ -10,9 +10,8 @@ A simple multilang column pricing app - made with Svelte - based on github prici
 
 ## Stand-alone live demo on [surge](https://surge.com)
 
-https://helper-progress-calendar.surge.sh/
+http://svelte-pricing.surge.sh/
 
-`prgs.store_progress()` in Web Inspector
 
 ---
 
@@ -21,7 +20,7 @@ https://helper-progress-calendar.surge.sh/
 Clone and install the dependencies...
 
 ```bash
-npx degit rutynka/svelte-pricing#main svelte-pricing
+npx degit rutynka/svelte-pricing svelte-pricing
 cd svelte-pricing
 yarn install
 ```
@@ -46,30 +45,22 @@ If you're using [Visual Studio Code](https://code.visualstudio.com/) we recommen
 npx degit sveltejs/template my-svelte-project
 cd my-svelte-project
 yarn install
-yarn add simple-svelte-pricing
+yarn add svelte-pricing
 yarn install
 yarn dev 
 ```
 
 ```js
-//my-svelte-project/src/App.svelte
 <script>
-	import { Progress } from '@rutynka/rutynka-progress/src/Progress.svelte'
+	import Pricing from 'svelte-pricing'
 	export let name;
-
-	let progress;
-
-	function handleClick() {
-		console.log('click', progress.store_progress())
-	}
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-	<button on:click={handleClick}>Heat up</button>
+	<Pricing/>
 </main>
-<Progress bind:this={progress}/>
 ```
 
 ## Building and running in production mode
