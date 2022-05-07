@@ -81,7 +81,7 @@
             btn_url: "/join?amount=25&currency=dollar"
         }
     }
-    if (userLang === 'pl-PL') {
+    if (userLang.toLocaleLowerCase().indexOf('pl') !== -1) {
         column_data = {
         plan: "Wybierz pakiet, który Ci odpowiada.",
         free: { 
@@ -91,7 +91,7 @@
         },
         a: {
             name: "Zawsze darmowe",
-            name_desc: "Podstawowe konto dla osób indywidualnych i organizacji",
+            name_desc: "Podstawowe konto",
             features: [
                 {n:"Wsparcie społeczności",desc:"wykop,telegram,discord,reddit"},
                 {n:"10MB storage",desc:"no desc"},
@@ -116,7 +116,7 @@
             name: "Zespół",
             name_desc: "Zoorganizowana grupa",
             features: [
-                {n:"Everything included in Free",desc:"no desc"},
+                {n:"To samo co w gratisie",desc:"no desc"},
                 {n:"<strong>Tryb wieloosobowy</strong>",desc:"Goolang SSE API"},
                 {n:"Baza danych",desc:"Baza danych do zapisu kodu oraz\nprzechowywania zdarzeń;analiza postępu"},
                 {n:"Grupy",desc:"Grupowanie danych po adresach"},
@@ -138,9 +138,9 @@
             class: "enterprise",
             name: "Firmowe",
             // name_desc: "Custom builds for advertisment",
-            name_desc: "In progress ...",
+            name_desc: "W trakcie ...",
             features: [
-                {n:"Everything included in Team",desc:"no desc"}, 
+                {n:"To samo co w gratisie",desc:"no desc"}, 
                 {n:"Premium support",desc:"no desc"}, 
                 {n:"Subdomain",desc:"no desc"},
                 {n:"Private urls",desc:"Private means - sign up to see"},
